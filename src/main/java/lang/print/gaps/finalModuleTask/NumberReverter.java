@@ -5,7 +5,7 @@ public class NumberReverter {
 
        int reversed = 0;
 
-        System.out.println("Original Number: " + number);
+
 
         // run loop until num becomes 0
         while(number != 0) {
@@ -18,6 +18,6 @@ public class NumberReverter {
             number /= 10;
         }
 
-        System.out.println("Reversed Number: " + reversed);
+        System.out.println(reversed);
     }
 }
