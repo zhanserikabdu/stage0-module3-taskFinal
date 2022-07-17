@@ -13,7 +13,7 @@ public class DigitsSumCalculator {
             number = number / 10;
         }
 //prints the result
-        System.out.println("Sum of Digits: "+sum);
+        System.out.println(sum);
     }
 
 }
