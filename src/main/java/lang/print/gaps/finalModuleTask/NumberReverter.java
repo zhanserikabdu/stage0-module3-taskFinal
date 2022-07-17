@@ -2,17 +2,22 @@ package lang.print.gaps.finalModuleTask;
 
 public class NumberReverter {
     public void revert(int number) {
-        int rev = 0; // reversed number
-        int rem;   // remainder
 
-        while(number>0){
+       int reversed = 0;
 
-            rem = number%10;
-            rev = (rev*10) + rem;
-            number = number/10;
+        System.out.println("Original Number: " + number);
+
+        // run loop until num becomes 0
+        while(number != 0) {
+
+            // get last digit from num
+            int digit = number % 10;
+            reversed = reversed * 10 + digit;
+
+            // remove the last digit from num
+            number /= 10;
         }
 
-        return rev;
+        System.out.println("Reversed Number: " + reversed);
     }
-
 }
